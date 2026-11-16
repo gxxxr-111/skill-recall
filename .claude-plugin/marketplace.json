@@ -1,0 +1,8 @@
+{
+  "name": "skill-recall",
+  "owner": { "name": "gxxxr-111" },
+  "metadata": { "description": "Measure whether your agent skills fire when they should, from real session history.", "version": "0.1.0" },
+  "plugins": [
+    { "name": "skill-recall", "source": "./", "description": "Missed-trigger detection and recall estimates for agent skills, from real Claude Code transcripts." }
+  ]
+}

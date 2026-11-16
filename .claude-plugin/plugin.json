@@ -1,0 +1,9 @@
+{
+  "name": "skill-recall",
+  "version": "0.1.0",
+  "description": "Find the prompts in your real Claude Code history where a skill should have fired but didn't; estimate per-skill recall, collisions and dropped descriptions.",
+  "author": { "name": "gxxxr-111" },
+  "repository": "https://github.com/gxxxr-111/skill-recall",
+  "license": "MIT",
+  "keywords": ["skills", "triggering", "recall", "evals", "claude-code"]
+}
