@@ -10,7 +10,7 @@ A local tool that reads your past agent sessions and tells you, with numbers, **
 
 1. **Round 1, first-hand evidence (no research cost):** five candidate gaps that had each cost real time or tokens in this session: cross-registry prior-art search, per-site access maps, skill trigger reliability, an owner-facing decision log, and skill security vetting.
 2. **Round 2, demand and prior art** (two Sonnet subagents, every project named given a verdict):
-   - **Trigger reliability ranked first.** Demand is strong: about 15 issues and posts, including Claude Code #32184 (0% recall in `claude -p`), #46952 (matching looks keyword-based) and #14016 (skills don't fire in subagents). Tooling is thin.
+   - **Trigger reliability ranked first.** Demand: recurring reports on the Claude Code tracker, including #32184 (0% recall in `claude -p`), #46952 (matching looks keyword-based), #14016 (skills don't fire in subagents) and #38588 (not invoked on the first turn). All were closed as stale or not planned, not fixed, and each has few reactions. Several blog posts make the same complaint (not individually verified). Tooling is thin.
    - Security is crowded (NVIDIA SkillSpector, Snyk agent-scan, Cisco). Access maps have three commercial players and high legal risk. The decision log is clean but shallow. Registry search is crowded with weak tools.
 3. **Round 3, narrowing:**
    - Anthropic's `/skill-doctor` already reports per-skill cost, usage and never-invoked skills, and the docs say description-budget overflow is logged.
@@ -70,3 +70,4 @@ A single stdlib-only Python CLI with these steps:
   - Fixed false misses: machine prompts (8 of 8 initial "misses"), uninstalled plugin caches, and skills installed mid-session (now handled by following the listing timeline).
   - Judge: 40 candidates, 2 Haiku calls, 44 s. Precision of the top lexical candidates was ~10%. Length normalization ranked true misses higher. Recall is now only shown for judged skills.
   - Finding: at least one built-in skill had zero uses and judge-confirmed misses, the exact case `/skill-doctor` reports as merely "unused".
+- 2026-11-17: corrected the evidence after publishing. The issue links went to a third-party mirror (claudeissues.com) and now point to GitHub. Checked each issue: all were auto-closed as stale or not planned rather than fixed, with low engagement, so the demand wording is toned down accordingly.

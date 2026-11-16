@@ -6,7 +6,7 @@
 
 **Which of your agent skills should have fired, but didn't?**
 
-Skills that don't trigger are one of the most common complaints about agent skills: [#32184](https://claudeissues.com/issue/32184-skill-auto-triggering-recall-0-in-headless-mode-claude-p-regardless-of-descripti), [#46952](https://claudeissues.com/issue/46952-bug-skill-auto-activation-appears-to-use-token-keyword-overlap-not-semantic-matc), [#14016](https://claudeissues.com/issue/14016-skills-dont-auto-activate-in-spawned-agents-via-task-tool) and many blog posts. The existing tools each measure a different part:
+Skills that don't trigger when they should is a recurring report on the Claude Code tracker: [#32184](https://github.com/anthropics/claude-code/issues/32184) (0% recall in `claude -p`), [#46952](https://github.com/anthropics/claude-code/issues/46952) (matching looks keyword-based), [#14016](https://github.com/anthropics/claude-code/issues/14016) (no auto-activation in subagents), [#38588](https://github.com/anthropics/claude-code/issues/38588) (not invoked on the first turn). Most were auto-closed as stale rather than fixed. The existing tools each measure a different part:
 
 | Tool | What it tells you |
 |---|---|

@@ -6,7 +6,7 @@
 
 **你装的 skill 里，哪些该触发却没触发？**
 
-"skill 不触发"是智能体 skill 最常见的抱怨之一（[#32184](https://claudeissues.com/issue/32184-skill-auto-triggering-recall-0-in-headless-mode-claude-p-regardless-of-descripti)、[#46952](https://claudeissues.com/issue/46952-bug-skill-auto-activation-appears-to-use-token-keyword-overlap-not-semantic-matc)、[#14016](https://claudeissues.com/issue/14016-skills-dont-auto-activate-in-spawned-agents-via-task-tool)，以及大量博客）。现有工具各管一块：
+"skill 该触发却不触发"在 Claude Code 的 issue 区反复出现：[#32184](https://github.com/anthropics/claude-code/issues/32184)（`claude -p` 下召回率为 0）、[#46952](https://github.com/anthropics/claude-code/issues/46952)（匹配看起来基于关键词）、[#14016](https://github.com/anthropics/claude-code/issues/14016)（子智能体里不会自动激活）、[#38588](https://github.com/anthropics/claude-code/issues/38588)（第一轮不调用）。这些 issue 大多因长期无人跟进被自动关闭，而不是被修复。现有工具各管一块：
 
 | 工具 | 能告诉你什么 |
 |---|---|
